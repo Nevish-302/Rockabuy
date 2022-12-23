@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import "./App.css";
+import Build from "./Components/Build";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Build />
     </div>
   );
 }
