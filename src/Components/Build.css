@@ -1,0 +1,41 @@
+
+.build{
+    color: var(--bg-heading);
+    margin-top: 12vh;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-attachment: ;
+    background-size: contain;
+    background-position: center center;
+  }
+  .location
+  {
+    font-size: 2rem;
+    display: flex;
+    justify-content:space-around;
+    width: 50vw;
+    height: 18%;
+  }
+  .left
+  {
+    text-align: left;
+  }
+  .right
+  {
+    text-align: right;
+  }
+  .build-title
+  {
+    position: absolute;
+    z-index: 100;
+    line-height: 90vh;
+    font-size: 10vh;
+    color: black;
+    text-shadow: 0px 0px 20px white;
+    align-items: center;
+  }

@@ -1,22 +1,33 @@
 import { useState } from "react";
 import moon from './images/moon-build.png'
+import Data from "./BuildData";
+import './Build.css'
+import Location from "./Location";
 
 export default function Build()
 {
     console.log("build")
-    const [regionsLeft, setRegionsLeft] = useState(['Mare Frigoris', 'Mare Imbrium', 'Oceanus Procellarum', 'Mare Cognitum', 'Mare Humorum'])
-    const [regionsRight, setregionsRight] = useState(['Mare Serenitatis', 'Mare Crisium', 'Mare Tranquilitatis', 'Mare Fecunditatis', 'Mare Nectaris'])
+    const [regionsLeft, setRegionsLeft] = useState(Data.left)
+    const [regionsRight, setregionsRight] = useState(Data.right)
     const Style = {
         backgroundImage : `url(${moon})`,
     }
-    const locationsLeft = regionsLeft.map(region => <div className="location">{region}</div>)
-    const locationsRight = regionsLeft.map(region => <div className="location">{region}</div>)
+    const line = {
+        width: 'calc(25vh*1.41)',
+        height : `18%`,
+        marginRight: '4vw',
+        borderBottom: `3px solid #00A3FF`,
+        transformOrigin: `left`,
+           
+    }
+    const locationsLeft = regionsLeft.map(location => <Location area = {location} direction = 'left' style = {{height : `15vh`}} />)
+    const locationsRight = regionsRight.map(location => <Location area = {location} direction = 'right' style = {{height : `18vh`}}/>)
     return (
         <div className="build" style={Style}>
+            <div className="build-title"> Where TO ? </div>
             <div className="locations-left">
                 {locationsLeft}
             </div>
-            <div className="build-title"> Where TO ? </div>
             <div className="loctions-right">
                 {locationsRight}
             </div>

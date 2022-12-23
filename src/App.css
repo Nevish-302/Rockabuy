@@ -58,27 +58,3 @@ select {
 
   --bs-border-radius: 10px;
 }
-.build{
-  color: var(--bg-heading);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: center center;
-}
-.location
-{
-  font-size: 2rem;
-  height: 18%;
-  margin: 2%;
-}
-.build-title
-{
-  line-height: 100vh;
-  font-size: 10vh;
-  align-items: center;
-}
