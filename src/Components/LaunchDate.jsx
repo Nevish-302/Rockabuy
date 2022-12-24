@@ -2,6 +2,7 @@ import React from 'react'
 import moon from './images/moon-build.png'
 import earth from './images/earth.png'
 import rocket from './images/rocket.png'
+import path from './images/arrow.png'
 
 import Button from "./Button";
 import "./LaunchDate.css";
@@ -11,7 +12,7 @@ const LaunchDate = () => {
     <div className='build-launch'>
         <img className='earth' src= {earth} alt="" />
         <img className='rocket' src= {rocket} alt="" />
-        <div className='path'></div>
+        <img className='path' src= {path} alt="" />
       <div className="launch-window">
         <h2>PICK A LAUNCH DATE</h2>
 
