@@ -1,0 +1,92 @@
+.orbitDiv{
+    position: relative;
+}
+
+.moon-img{
+    height: 80vh;
+    position: absolute;
+    left: 31%;
+    top: 6.5rem;
+    opacity: 20%;
+}
+
+.earth-img{
+    position: absolute;
+    height: 60vh;
+    left: 21%;
+    top: 15rem;
+    z-index: 20;
+}
+
+.meo-img{
+    position: absolute;
+    height: 60vh;
+    left: 16%;
+    top: 16rem;
+}
+
+.polar-img{
+    position: absolute;
+    height: 61vh;
+    left: 39%;
+    top: 15rem;
+    z-index: 21;
+}
+
+.sunSync-img{
+    position: absolute;
+    height: 61vh;
+    left: 36%;
+    top: 15rem;
+    z-index: 21;
+}
+
+.leo-img{
+    position: absolute;
+    width: 65vh;
+    left: 24.5%;
+    top: 25rem;
+    z-index: 21;
+}
+
+.gto-img{
+    position: absolute;
+    height: 51vh;
+    left: 10%;
+    top: 15rem;
+}
+
+.esc-img{
+    position: absolute;
+    height: 37.5vh;
+    left: 25%;
+    top: 26rem;
+}
+
+.geo-img{
+    position: absolute;
+    height: 20vh;
+    left: 10%;
+    top: 24rem;
+}
+
+
+.orbit-content{
+    position: absolute;
+    right: 6rem;
+    top: 9rem;
+}
+
+.orbit-content h1{
+    font-size: var(--fs-logo);
+}
+
+.orbit-content h3{
+    font-size: 1.25rem;
+}
+
+
+.orbit-btn{
+    position: absolute;
+    right: 0;
+}
