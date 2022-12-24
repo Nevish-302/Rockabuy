@@ -8,13 +8,16 @@
     margin-top:15vh;
 }
 .rocket-button-group {
+    position: absolute;
     width: 80vw;
     z-index : 10;
     align-items: flex-end;
 }
 .rocket-button{
     height: 20px;
-    z-index : 20;
+    z-index : 50;
+    cursor: pointer;
+
 }
 #button-1
 {
@@ -44,7 +47,7 @@
 .rocket-image
 {
     position: absolute;
-    z-index : 1;
+    z-index : 10;
     width: 40vw;
     height: 26.66vw;
     margin-top: 5.5vw;
