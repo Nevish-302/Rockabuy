@@ -1,7 +1,7 @@
 
 .build{
     color: var(--bg-heading);
-    margin-top: 12vh;
+    top: 12vh;
     width: 100vw;
     height: 90vh;
     display: flex;

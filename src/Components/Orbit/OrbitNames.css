@@ -1,0 +1,130 @@
+.names{
+    color: #3b3a3a54;
+    font-size: var(--fs-para);
+    font-weight: 600;
+    position: absolute;
+}
+
+.names:hover{
+    color: #fff;
+}
+
+.lines:hover{
+    opacity: 100%;
+}
+
+.l1{
+    left: 27rem;
+    top: 11rem;
+}
+
+.l2{
+    left: 21rem;
+    top: 18rem;
+    z-index: 1;
+}
+
+.l3{
+    left: 12rem;
+    top: 28rem;
+}
+
+.l4{
+    left: 22rem;
+    top: 26rem;
+}
+
+.l5{
+    left: 28rem;
+    top: 30rem;
+}
+
+.l6{
+    left: 42rem;
+    top: 28rem;
+}
+
+.l7{
+    left: 56rem;
+    top: 30rem;
+}
+
+.l8{
+    left: 59rem;
+    top: 27rem;
+}
+
+.l9{
+    left: 55rem;
+    top: 21rem;
+}
+
+.l10{
+    left: 60rem;
+    top: 7rem;
+}
+
+.l11{
+    left: 51rem;
+    top: 10rem;
+}
+
+.n1{
+    left: 19rem;
+    top: 9rem;
+}
+
+.n2{
+    left: 9rem;
+    top: 19rem;
+}
+
+.n3{
+    left: 2rem;
+    top: 26rem;
+}
+
+.n4{
+    left: 9rem;
+    top: 38rem;
+}
+
+.n5{
+    left: 19rem;
+    top: 42rem;
+}
+
+.n6{
+    left: 39rem;
+    top: 42rem;
+}
+
+.n7{
+    left: 61rem;
+    top: 35rem;
+}
+
+.n8{
+    left: 66rem;
+    top: 27rem;
+}
+
+.n9{
+    left: 65rem;
+    top: 19rem;
+}
+
+.n10{
+    left: 61rem;
+    top: 12rem;
+}
+
+.n11{
+    left: 59rem;
+    top: 7rem;
+}
+
+.lines{
+    opacity: 20%;
+    position: absolute;
+}
