@@ -12,13 +12,13 @@ import Box from "./Box";
 function Hero() {
   return (
     <React.Fragment>
-      <div class="hero">
-        <img class="ring1" src={ring2} />
-        <img class="ring2" src={ring1} />
-        <img class="moon" src={moon} />
+      <div className="hero">
+        <img className="ring1" src={ring2} />
+        <img className="ring2" src={ring1} />
+        <img className="moon" src={moon} />
 
-        <div class="main-content">
-          <div class="distance">
+        <div className="main-content">
+          <div className="distance">
             <img src={distance} />
             <div>
               <p>Moon/Earth</p>
@@ -31,9 +31,9 @@ function Hero() {
             space<br/> community.
           </p>
           <Button>Get Started</Button>
-          <div class='boxes'>
-            <Box class='large-box'>
-              <img class="rocket" src={rocket} />
+          <div className='boxes'>
+            <Box className='large-box'>
+              <img className="rocket" src={rocket} />
               <p>Space Travel</p>
               <span>Stories</span>
             </Box>
