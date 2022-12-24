@@ -25,8 +25,6 @@ function App() {
 
         <Route path="/" exact>
           <Hero />
-          <Login />
-          <SignUp />
         </Route>
 
         <Route path="/orbit" exact>
@@ -48,6 +46,14 @@ function App() {
 
         <Route path="/about">
           <About />
+        </Route>
+
+        <Route path="/login">
+         <Login />
+        </Route>
+
+        <Route path="/signup">
+         <SignUp />
         </Route>
        
       </div>

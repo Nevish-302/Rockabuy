@@ -44,3 +44,14 @@ a:hover{
     color: var(--bg-button);
     font-size: 1.2rem;
 }
+
+.cta {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cta Button{
+   width: 110px;
+   margin-left: 0;
+   margin-right: -5rem;
+}
