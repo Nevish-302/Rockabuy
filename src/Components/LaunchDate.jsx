@@ -17,14 +17,14 @@ const LaunchDate = () => {
         <h2>PICK A LAUNCH DATE</h2>
 
         <h3>SELECT A YEAR</h3>
-        <Button>2022</Button>
-        <Button>2023</Button>
+        <Button className = "option" >2022</Button>
+        <Button className = "option">2023</Button>
         <h3>SELECT A QUARTER</h3>
         <div style={{display: "flex", justifyContent: "space-between"}}>
-        <Button>Q1</Button>
-        <Button>Q2</Button>
-        <Button>Q3</Button>
-        <Button>Q4</Button>
+        <Button className = "option">Q1</Button>
+        <Button className = "option">Q2</Button>
+        <Button className = "option">Q3</Button>
+        <Button className = "option">Q4</Button>
         </div>
         
         <div className='launch' style={{float: "right"}}><Button>Build & Launch</Button></div>
