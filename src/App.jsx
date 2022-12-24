@@ -18,6 +18,20 @@ import Login from "./Components/Login";
 import SignUp from "./Components/SignUp"
 
 function App() {
+  const [form, setForm] = React.useState({
+    Username : '',
+    location : '',
+    payload : {
+        weight : '',
+        faringSiza : '',
+        orbit : '',
+    },
+    time : {
+            year : '',
+            quarter : ''
+    },
+})
+console.log(form)
   return (
     <BrowserRouter>
       <div className="App">
@@ -49,7 +63,7 @@ function App() {
         </Route>
 
         <Route path="/login">
-         <Login />
+         <Login form = {setForm} />
         </Route>
 
         <Route path="/signup">
