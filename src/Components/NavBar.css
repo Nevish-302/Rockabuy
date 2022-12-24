@@ -3,6 +3,7 @@ nav{
     align-items: center;
     background-color: transparent;
     position: fixed;
+    top:0;
     padding: 2.5rem 8rem;
     z-index: 100;
 }

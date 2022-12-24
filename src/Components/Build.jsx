@@ -3,9 +3,11 @@ import moon from './images/moon-build.png'
 import Data from "./BuildData";
 import './Build.css'
 import Location from "./Location";
+import NavBar from "./Navbar";
 
 export default function Build()
 {
+    <NavBar />
     console.log("build")
     const [regionsLeft, setRegionsLeft] = useState(Data.left)
     const [regionsRight, setregionsRight] = useState(Data.right)

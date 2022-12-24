@@ -6,7 +6,7 @@ export default function Location(props)
         width: 'calc(25vh*1.41)',
         height : `18%`,
         marginRight: '4vw',
-        borderBottom: `3px solid #00A3FF`,
+        borderBottom: `2px solid #00A3FF`,
         transformOrigin: `left`,
            
     }

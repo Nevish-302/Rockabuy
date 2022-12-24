@@ -6,10 +6,13 @@ import "./App.css";
 import Build from "./Components/Build";
 import NavBar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import LaunchDate from "./Components/LaunchDate"
 import Orbit from "./Components/Orbit/Orbit";
 import About from "./Components/About";
+
 import { Route } from "react-router-dom";
 import { Redirect } from "react-router-dom";
+import Rocket from "./Components/Rocket";
 
 function App() {
   return (
@@ -31,6 +34,11 @@ function App() {
 
         <Route path="/build">
           <Build />
+          <LaunchDate />
+        </Route>
+
+        <Route path="/rocket">
+          <Rocket />
         </Route>
 
         <Route path="/about">
