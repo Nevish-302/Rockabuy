@@ -33,61 +33,223 @@ function Orbit() {
   const [synImg, setsynImg] = useState(sunSync);
   const [polarImg, setpolarImg] = useState(polar);
 
+  const [gtoActive, setgtoActive] = useState("");
+  const [geoActive, setgeoActive] = useState("");
+  const [meoActive, setmeoActive] = useState("");
+  const [leoActive, setleoActive] = useState("");
+  const [escActive, setescActive] = useState("");
+  const [synActive, setsynActive] = useState("");
+  const [polarActive, setpolarActive] = useState("");
 
   function handlegeo() {
     if (geoImg == geo) {
       console.log(geoImg);
       setgeoImg(geoClicked);
+      setgtoImg(gto);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setgeoActive("activeOrbitClass");
+      setgtoActive('');
+      setmeoActive('');
+      setleoActive('');
+      setescActive('');
+      setsynActive('');
+      setpolarActive('')
     } else {
       setgeoImg(geo);
+      setgtoImg(gto);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setgeoActive("");
     }
   }
 
   function handlegto() {
     if (gtoImg == gto) {
       setgtoImg(gtoClicked);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setgtoActive("activeOrbitClass");
+      setgeoActive('');
+      setmeoActive('');
+      setleoActive('');
+      setescActive('');
+      setsynActive('');
+      setpolarActive('')
     } else {
       setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setgtoActive("");
     }
   }
 
   function handlemeo() {
     if (meoImg == meo) {
       setmeoImg(meoClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setmeoActive("activeOrbitClass");
+      setgtoActive('');
+      setgeoActive('');
+      setleoActive('');
+      setescActive('');
+      setsynActive('');
+      setpolarActive('')
     } else {
       setmeoImg(meo);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setmeoActive("");
     }
   }
 
   function handleleo() {
     if (leoImg == leo) {
       setleoImg(leoClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setleoActive("activeOrbitClass");
+      setgtoActive('');
+      setgeoActive('');
+      setmeoActive('');
+      setescActive('');
+      setsynActive('');
+      setpolarActive('')
     } else {
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
       setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setleoActive("");
     }
   }
 
   function handleesc() {
     if (escImg == esc) {
       setescImg(escClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setescActive("activeOrbitClass");
+      setgtoActive('');
+      setgeoActive('');
+      setmeoActive('');
+      setleoActive('');
+      setsynActive('');
+      setpolarActive('')
     } else {
       setescImg(esc);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setescActive("");
     }
   }
 
   function handlesyn() {
     if (synImg == sunSync) {
       setsynImg(synClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setpolarImg(polar);
+
+      setsynActive("activeOrbitClass");
+      setgtoActive('');
+      setgeoActive('');
+      setmeoActive('');
+      setleoActive('');
+      setescActive('');
+      setpolarActive('')
     } else {
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
       setsynImg(sunSync);
+      setpolarImg(polar);
+
+      setsynActive("");
     }
   }
 
   function handlepolar() {
     if (polarImg == polar) {
       setpolarImg(polarClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+
+      setpolarActive("activeOrbitClass");
+      setgtoActive('');
+      setgeoActive('');
+      setmeoActive('');
+      setleoActive('');
+      setescActive('');
+      setsynActive('');
     } else {
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
       setpolarImg(polar);
+
+      setpolarActive("");
     }
   }
 
@@ -103,13 +265,13 @@ function Orbit() {
       <img className="esc-img" src={escImg} />
       <img className="geo-img" src={geoImg} />
 
-    <OrbitNames />
+      <OrbitNames />
 
       <div className="orbit-content">
         <h2>ORBIT</h2> <br />
         <h3>CORE SERVICE(EAST COAST)</h3>
         <div className="row">
-          <OrbitButton handleClick={handlegto}>
+          <OrbitButton handleClick={handlegto} activeClass={gtoActive}>
             GTO
             <br />
             1800m/s
@@ -117,15 +279,21 @@ function Orbit() {
         </div>
         <h3>EAST COAST LAUNCH</h3>
         <div className="row">
-          <OrbitButton handleClick={handlegto}>
+          <OrbitButton handleClick={handlegto} activeClass={gtoActive}>
             GTO
             <br />
             1500m/s
           </OrbitButton>
-          <OrbitButton handleClick={handlegeo}>GEO</OrbitButton>
-          <OrbitButton handleClick={handlemeo}>MEO</OrbitButton>
-          <OrbitButton handleClick={handleleo}>LEO</OrbitButton>
-          <OrbitButton handleClick={handleesc}>
+          <OrbitButton handleClick={handlegeo} activeClass={geoActive}>
+            GEO
+          </OrbitButton>
+          <OrbitButton handleClick={handlemeo} activeClass={meoActive}>
+            MEO
+          </OrbitButton>
+          <OrbitButton handleClick={handleleo} activeClass={leoActive}>
+            LEO
+          </OrbitButton>
+          <OrbitButton handleClick={handleesc} activeClass={escActive}>
             EARTH
             <br />
             ESCAPE
@@ -133,18 +301,18 @@ function Orbit() {
         </div>
         <h3>CORE SERVICE(EAST COAST)</h3>
         <div className="row">
-          <OrbitButton handleClick={handlesyn}>
+          <OrbitButton handleClick={handlesyn} activeClass={synActive}>
             SUN
             <br />
             SYNC
           </OrbitButton>
-          <OrbitButton handleClick={handlepolar}>
+          <OrbitButton handleClick={handlepolar} activeClass={polarActive}>
             POLAR
             <br />
             {"      "}
           </OrbitButton>
         </div>
-        <Button className='orbit-btn'>Next</Button>
+        <Button className="orbit-btn">Next</Button>
       </div>
     </div>
   );

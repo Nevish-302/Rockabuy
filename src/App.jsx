@@ -24,6 +24,10 @@ function App() {
           <Hero />
         </Route>
 
+        <Route path="/orbit" exact>
+          <Orbit />
+        </Route>
+
         <Route path="/home">
           <Hero />
         </Route>
