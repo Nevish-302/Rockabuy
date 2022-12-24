@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink, Route } from "react-router-dom";
+
 import logo from "../assets/logo.png";
 import './NavBar.css';
 import Button from "./Button";
@@ -11,9 +13,9 @@ function NavBar() {
         <span>RockaBuy</span>
       </div>
       <ul>
-        <li>Home</li>
-        <li>Build</li>
-        <li>About</li>
+        <NavLink activeClassName='active' to='/home'>Home</NavLink>
+        <NavLink activeClassName='active'  to='/build'>Build</NavLink>
+        <NavLink activeClassName='active'  to='/about'>About</NavLink>
       </ul>
       <div className='cta'>
         <Button class='inverted'>Log In</Button>
