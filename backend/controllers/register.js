@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const User = require('../models/user.model')
 const jwt = require("jsonwebtoken");
-const register_p = async (req, res) => {
+const register = async (req, res) => {
     const {username, password, email} = await req.body;
     const saltrounds = 10
     bcrypt.hash(password, saltrounds, (err, hash)=>{
@@ -19,18 +19,14 @@ const register_p = async (req, res) => {
           { user_id: username },
           `process.env.TOKEN_KEY`,
           {
-            expiresIn: "2h",
+            expiresIn: "20h",
           }
         );
         user.token = token;
         console.log(user);
         res.status(200).json(user);            
     })
-    
-          
-    
+       
 }
-const register_g = (req, res) => {
-    res.status(200).send('Home');
-}
-module.exports = {register_p, register_g}
+
+module.exports = {register}

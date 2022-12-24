@@ -4,11 +4,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-var session = require('express-session')
 var cookieParser = require('cookie-parser')
-//To save the session in mongodb
-
-const mongodbSession = require('connect-mongodb-session')(session)
 
 app = express()
 
@@ -29,30 +25,13 @@ connection.once('open', ()=>
     console.log(`MongoDB connected successfully`);
 })
 
-//The sessions are to be stored in sessions collection
-
-const store = new mongodbSession(
-    {
-        uri: uri,
-        collection: 'sessions',
-    }
-)
-
-//To use sessions in the web application
-
-app.use(session({
-    secret: 'cookie',
-    resave: false,
-    saveUninitialized: false,
-    isauth:false,
-    store: store
-}))
-
 //The routes
 const auth = require(`./routes/userauth`)
+const data = require('./routes/data')
 
 //The routing of requests
 app.use('/userauth', auth)
+app.use('/data', data)
 
 app.listen(5000, () => {
   console.log(`The server is listening on the port 5000`);
