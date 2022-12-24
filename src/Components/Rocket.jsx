@@ -14,6 +14,7 @@ export default function Rocket (){
     function handleButton(event)
     {
         event.target.src = buttonMinus
+        
     }
    return ( 
    <div className='rocket-type'>
