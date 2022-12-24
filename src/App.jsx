@@ -45,6 +45,14 @@ function App() {
         <Route path="/rocket">
           <Rocket />
         </Route>
+        
+        <Route path="/login">
+          <Login />
+        </Route>
+        
+        <Route path="/signup">
+          <SignUp />
+        </Route>
 
         <Route path="/about">
           <About />

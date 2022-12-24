@@ -4,11 +4,6 @@ import Button from './Button';
 import { useHistory } from 'react-router-dom'
 import "./login.css";
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e.value);
-}
-
 const Login = () => {
 
   const [username, setUsername] = useState("");
