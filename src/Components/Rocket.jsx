@@ -26,7 +26,6 @@ export default function Rocket() {
   const [m5, setM5] = useState(false);
 
   function openModal() {
-    console.log(m1);
     setM1(!m1);
   }
   function openm2() {
