@@ -18,20 +18,6 @@ import Login from "./Components/Login";
 import SignUp from "./Components/SignUp"
 
 function App() {
-  const [form, setForm] = React.useState({
-    Username : '',
-    location : '',
-    payload : {
-        weight : '',
-        faringSiza : '',
-        orbit : '',
-    },
-    time : {
-            year : '',
-            quarter : ''
-    },
-})
-console.log(form)
   return (
     <BrowserRouter>
       <div className="App">
@@ -39,6 +25,8 @@ console.log(form)
 
         <Route path="/" exact>
           <Hero />
+          <Login />
+          <SignUp />
         </Route>
 
         <Route path="/orbit" exact>
@@ -60,14 +48,6 @@ console.log(form)
 
         <Route path="/about">
           <About />
-        </Route>
-
-        <Route path="/login">
-         <Login form = {setForm} />
-        </Route>
-
-        <Route path="/signup">
-         <SignUp />
         </Route>
        
       </div>

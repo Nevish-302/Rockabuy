@@ -9,7 +9,7 @@ const handleSubmit = (e) => {
     console.log(e.value);
 }
 
-const Login = (props) => {
+const Login = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
