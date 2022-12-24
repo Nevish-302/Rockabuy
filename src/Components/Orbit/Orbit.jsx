@@ -33,62 +33,145 @@ function Orbit() {
   const [synImg, setsynImg] = useState(sunSync);
   const [polarImg, setpolarImg] = useState(polar);
 
-
   function handlegeo() {
     if (geoImg == geo) {
       console.log(geoImg);
       setgeoImg(geoClicked);
+      setgtoImg(gto);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     } else {
       setgeoImg(geo);
+      setgtoImg(gto);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     }
   }
 
   function handlegto() {
     if (gtoImg == gto) {
       setgtoImg(gtoClicked);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     } else {
       setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     }
   }
 
   function handlemeo() {
     if (meoImg == meo) {
       setmeoImg(meoClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     } else {
       setmeoImg(meo);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     }
   }
 
   function handleleo() {
     if (leoImg == leo) {
       setleoImg(leoClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     } else {
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
       setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     }
   }
 
   function handleesc() {
     if (escImg == esc) {
       setescImg(escClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     } else {
       setescImg(esc);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setsynImg(sunSync);
+      setpolarImg(polar)
     }
   }
 
   function handlesyn() {
     if (synImg == sunSync) {
       setsynImg(synClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setpolarImg(polar)
     } else {
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
       setsynImg(sunSync);
-    }
+      setpolarImg(polar)    }
   }
 
   function handlepolar() {
     if (polarImg == polar) {
       setpolarImg(polarClicked);
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
     } else {
-      setpolarImg(polar);
-    }
+      setgtoImg(gto);
+      setgeoImg(geo);
+      setmeoImg(meo);
+      setleoImg(leo);
+      setescImg(esc);
+      setsynImg(sunSync);
+      setpolarImg(polar)
+        }
   }
 
   return (
@@ -103,7 +186,7 @@ function Orbit() {
       <img className="esc-img" src={escImg} />
       <img className="geo-img" src={geoImg} />
 
-    <OrbitNames />
+      <OrbitNames />
 
       <div className="orbit-content">
         <h2>ORBIT</h2> <br />
@@ -144,7 +227,7 @@ function Orbit() {
             {"      "}
           </OrbitButton>
         </div>
-        <Button className='orbit-btn'>Next</Button>
+        <Button className="orbit-btn">Next</Button>
       </div>
     </div>
   );
