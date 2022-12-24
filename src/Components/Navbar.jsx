@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Route} from "react-router-dom";
+import { NavLink, Route, Link} from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import './NavBar.css';
@@ -18,8 +18,14 @@ function NavBar() {
         <NavLink activeClassName='active'  to='/about'>About</NavLink>
       </ul>
       <div className='cta'>
-        <Button className='inverted'>Log In</Button>
-        <Button >Sign Up</Button>
+        <ul>
+        <Link to="/login">
+        <Button className= "inverted">Log In</Button>
+        </Link>
+        <Link to="/signup">
+        <Button>Sign Up</Button>
+        </Link>
+        </ul>
       </div>
     </nav>
   );
