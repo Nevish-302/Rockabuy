@@ -1,5 +1,4 @@
 const data = require('../models/data.model')
-const userData = require('../models/userdata.model')
 
 const get_data = async (req, res) => {
     const {_username} = await req.body

@@ -25,7 +25,7 @@ const login = (req, res) => {
                   );
                   res.cookie("auth", token, { expire: new Date() + 9999 });
                   res.status(200).json(id);
-                console.log({ msg: "Login success" }, req.session);
+                console.log({ msg: "Login success" });
             } else {
                 return res.status(401).json({ msg: "Invalid credentials" })
             }

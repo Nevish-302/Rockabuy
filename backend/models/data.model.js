@@ -25,14 +25,14 @@ const data = new Schema ({
         orbit : {
             type : String,
         },
-    }
+    },
     time : {
             
             year : {
                 type : String
             },
             quarter : {
-                type string,
+                type : String,
             }
     },
 });

@@ -1,18 +1,16 @@
-const userData = require('../models/userdata.model')
-const User = require('../models/user.model');
 const data = require('../models/data.model');
 
 const form_submit =  async (req, res) => {
     const dta = await req.body
     const {
-            _Username, 
+            username, 
             _location, 
             _payload, 
             _time,         
     } = dta
     console.log(dta)
     const data_ = new data({
-        Username : _Username,
+        Username : username,
         location : _location,
         payload : _payload,
         time : _time,
