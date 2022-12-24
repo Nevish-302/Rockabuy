@@ -14,6 +14,9 @@ import { Route } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import Rocket from "./Components/Rocket";
 
+import Login from "./Components/Login";
+import SignUp from "./Components/SignUp"
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +25,12 @@ function App() {
 
         <Route path="/" exact>
           <Hero />
+          <Login />
+          <SignUp />
+        </Route>
+
+        <Route path="/orbit" exact>
+          <Orbit />
         </Route>
 
         <Route path="/home">
@@ -40,6 +49,7 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
+       
       </div>
     </BrowserRouter>
   );

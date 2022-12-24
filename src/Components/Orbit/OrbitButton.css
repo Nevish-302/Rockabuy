@@ -10,6 +10,11 @@
     cursor: pointer;
 }
 
+.orbit-button:hover, .activeOrbitClass{
+    background-color: var(--bg-bigBox);
+}
+
+
 .col-4{
 border: 5px solid var(--bg-black)
 }

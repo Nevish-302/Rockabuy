@@ -10,7 +10,7 @@
     margin: auto;
     width: 25%;
     margin-bottom: 7rem;
-    margin-left: 5rem;
+    margin-left: -35rem;
     /* border: 3px solid #73AD21; */
 }
 
@@ -32,42 +32,30 @@
 .build-launch .earth {
     width: 405px;
     height: 304opx;
-    margin-left: 3rem;
+    margin-left: -1rem;
 }
 
 .build-launch .rocket {
-    width: 262px;
-    height: 262px;
-    margin-left: -10rem;
-    margin-bottom: 17rem;
+    width: 250px;
+    height: 250px;
+    margin-left: -11rem;
+    margin-bottom: 18rem;
 }
 
 .build-launch .path {
-    /* position: absolute;
-    width: 800px;
-    height: 800px;
-    background-color: black;
-    border-top: 5px dotted grey;
-    border-radius: 50%;
-    margin-left: 25rem;
-    margin-bottom: -12rem;
-    z-index: -1;
-    overflow: hidden; */
-    position: absolute;
-    width: 800px;
-    height: 400px; /* as the half of the width */
-    background-color: black;
-    border-top-left-radius: 60%;  /* 100px of height + 10px of border */
-    border-top-right-radius: 60%; /* 100px of height + 10px of border */
-    border-top: 5px dotted gray;
-    border-bottom: 0;
-    margin-bottom: 13rem;
-    margin-left: 30rem;
-    z-index: -1;
+    width: 732px;
+    height: 121px;
+    position: relative;
+    margin-bottom: 33rem;
 }
 
 .build-launch .moon {
     width: 253px;
     height: 253px;
+    position: relative;
     margin-right: 5rem;
+}
+
+.option:focus {
+    background-color: var(--bg-bigBox);
 }

@@ -14,7 +14,7 @@ export default function Rocket (){
     function handleButton(event, number)
     {
         console.log('Hello')
-        const changeButton = document.getElementById(`button-${number}`).src
+        var changeButton = document.getElementById(`button-${number}`).src
         const displayMessage = document.getElementById(`message-${number}`).style.display;
         displayMessage == 'none'? display = 'block' : display = 'none';
         displayMessage == 'none'? changeButton = buttonMinus : buttonPlus;
