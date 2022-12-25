@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Orbit.css";
 
-import Button from "../Button";
+import Button from "../Button/Button";
 
 import moon from "../images/moon-build.png";
 import earth from "../images/orbit_earth.png";
@@ -23,6 +23,7 @@ import escClicked from "../images/finalState/esc-clicked.png";
 import synClicked from "../images/finalState/syn-clicked.png";
 import polarClicked from "../images/finalState/polar-clicked.png";
 import OrbitNames from "./OrbitNames";
+import { Link } from "react-router-dom";
 
 function Orbit() {
   const [gtoImg, setgtoImg] = useState(gto);
@@ -53,12 +54,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setgeoActive("activeOrbitClass");
-      setgtoActive('');
-      setmeoActive('');
-      setleoActive('');
-      setescActive('');
-      setsynActive('');
-      setpolarActive('')
+      setgtoActive("");
+      setmeoActive("");
+      setleoActive("");
+      setescActive("");
+      setsynActive("");
+      setpolarActive("");
     } else {
       setgeoImg(geo);
       setgtoImg(gto);
@@ -83,12 +84,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setgtoActive("activeOrbitClass");
-      setgeoActive('');
-      setmeoActive('');
-      setleoActive('');
-      setescActive('');
-      setsynActive('');
-      setpolarActive('')
+      setgeoActive("");
+      setmeoActive("");
+      setleoActive("");
+      setescActive("");
+      setsynActive("");
+      setpolarActive("");
     } else {
       setgtoImg(gto);
       setgeoImg(geo);
@@ -113,12 +114,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setmeoActive("activeOrbitClass");
-      setgtoActive('');
-      setgeoActive('');
-      setleoActive('');
-      setescActive('');
-      setsynActive('');
-      setpolarActive('')
+      setgtoActive("");
+      setgeoActive("");
+      setleoActive("");
+      setescActive("");
+      setsynActive("");
+      setpolarActive("");
     } else {
       setmeoImg(meo);
       setgtoImg(gto);
@@ -144,12 +145,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setleoActive("activeOrbitClass");
-      setgtoActive('');
-      setgeoActive('');
-      setmeoActive('');
-      setescActive('');
-      setsynActive('');
-      setpolarActive('')
+      setgtoActive("");
+      setgeoActive("");
+      setmeoActive("");
+      setescActive("");
+      setsynActive("");
+      setpolarActive("");
     } else {
       setgtoImg(gto);
       setgeoImg(geo);
@@ -174,12 +175,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setescActive("activeOrbitClass");
-      setgtoActive('');
-      setgeoActive('');
-      setmeoActive('');
-      setleoActive('');
-      setsynActive('');
-      setpolarActive('')
+      setgtoActive("");
+      setgeoActive("");
+      setmeoActive("");
+      setleoActive("");
+      setsynActive("");
+      setpolarActive("");
     } else {
       setescImg(esc);
       setgtoImg(gto);
@@ -204,12 +205,12 @@ function Orbit() {
       setpolarImg(polar);
 
       setsynActive("activeOrbitClass");
-      setgtoActive('');
-      setgeoActive('');
-      setmeoActive('');
-      setleoActive('');
-      setescActive('');
-      setpolarActive('')
+      setgtoActive("");
+      setgeoActive("");
+      setmeoActive("");
+      setleoActive("");
+      setescActive("");
+      setpolarActive("");
     } else {
       setgtoImg(gto);
       setgeoImg(geo);
@@ -234,12 +235,12 @@ function Orbit() {
       setsynImg(sunSync);
 
       setpolarActive("activeOrbitClass");
-      setgtoActive('');
-      setgeoActive('');
-      setmeoActive('');
-      setleoActive('');
-      setescActive('');
-      setsynActive('');
+      setgtoActive("");
+      setgeoActive("");
+      setmeoActive("");
+      setleoActive("");
+      setescActive("");
+      setsynActive("");
     } else {
       setgtoImg(gto);
       setgeoImg(geo);
@@ -264,8 +265,6 @@ function Orbit() {
       <img className="gto-img" src={gtoImg} />
       <img className="esc-img" src={escImg} />
       <img className="geo-img" src={geoImg} />
-
-      <OrbitNames />
 
       <div className="orbit-content">
         <h2>ORBIT</h2> <br />
@@ -312,7 +311,9 @@ function Orbit() {
             {"      "}
           </OrbitButton>
         </div>
-        <Button className="orbit-btn">Next</Button>
+        <Link to="/launch-date">
+          <Button className="orbit-btn">Next &rarr;</Button>
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,39 @@
+.launching_page {
+  background-image: url("../../assets/earthPic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.moonImg {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 8rem;
+  right: 8rem;
+}
+
+.rocketImg {
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+  transform: rotate(15deg);
+}
+
+.launching-page-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+}
+
+.launching-page-content h3 {
+  font-weight: 900;
+}

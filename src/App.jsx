@@ -3,19 +3,19 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
-import Build from "./Components/Build";
-import NavBar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import LaunchDate from "./Components/LaunchDate"
+import Build from "./Components/Build Section/Build";
+import NavBar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
+import LaunchDate from "./Components/Launch Date Section/LaunchDate";
 import Orbit from "./Components/Orbit/Orbit";
-import About from "./Components/About";
+import About from "./Components/About/About.jsx";
+import Launching from "./Components/Launch/Launching";
 
 import { Route } from "react-router-dom";
-import { Redirect } from "react-router-dom";
-import Rocket from "./Components/Rocket";
+import Rocket from "./Components/Rocket Section/Rocket";
 
-import Login from "./Components/Login";
-import SignUp from "./Components/SignUp"
+import Login from "./Components/Get Started/Login";
+import SignUp from "./Components/Get Started/SignUp";
 
 function App() {
   return (
@@ -25,8 +25,6 @@ function App() {
 
         <Route path="/" exact>
           <Hero />
-          <Login />
-          <SignUp />
         </Route>
 
         <Route path="/orbit" exact>
@@ -39,17 +37,24 @@ function App() {
 
         <Route path="/build">
           <Build />
+        </Route>
+
+        <Route path="/launch-date">
           <LaunchDate />
+        </Route>
+
+        <Route path="/launch">
+          <Launching />
         </Route>
 
         <Route path="/rocket">
           <Rocket />
         </Route>
-        
+
         <Route path="/login">
           <Login />
         </Route>
-        
+
         <Route path="/signup">
           <SignUp />
         </Route>
@@ -57,7 +62,6 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-       
       </div>
     </BrowserRouter>
   );

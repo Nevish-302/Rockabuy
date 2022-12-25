@@ -1,9 +1,9 @@
 import { useState } from "react";
-import moon from './images/moon-build.png'
+import moon from '../images/moon-build.png'
 import Data from "./BuildData";
 import './Build.css'
 import Location from "./Location";
-import NavBar from "./Navbar";
+import NavBar from "../Navbar/Navbar";
 
 export default function Build()
 {

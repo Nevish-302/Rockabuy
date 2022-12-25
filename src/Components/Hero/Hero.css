@@ -28,9 +28,9 @@
 .main-content {
   position: absolute;
   z-index: 20;
-  top: 12rem;
+  top: 10rem;
   left: 8rem;
-  width: 29vw;
+  width: 30vw;
 }
 
 .main-content h1 {
