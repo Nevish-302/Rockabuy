@@ -1,9 +1,11 @@
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: transparent;
   position: fixed;
-  top: 0;
+  top: 0;font-size: large;
   padding: 2.5rem 8rem;
   z-index: 100;
 }
@@ -56,4 +58,8 @@ a:hover {
   width: 110px;
   margin-left: 0;
   margin-right: -5rem;
+}
+.second {
+  display: flex;
+  align-items:center;
 }

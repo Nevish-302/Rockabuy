@@ -13,6 +13,9 @@ const LaunchDate = () => {
   const [time, setTime] = React.useState({year : "", quarter : ""})
   function handleClick(event)
   {
+    
+   
+    event.target.className = 'inverted'
     event.target.name == "year" ? setTime(prevTime => ({...prevTime, year : event.target.value}) ) : setTime(prevTime => ({...prevTime, quarter : event.target.value}) ) 
   }
   console.log(time)
@@ -25,9 +28,9 @@ const LaunchDate = () => {
         <h2>PICK A LAUNCH DATE</h2>
 
         <h3>SELECT A YEAR</h3>
-        <Button name ="year" value="2022" onClick={handleClick} >2022</Button>
-        <Button name ="year" value="2023" onClick={handleClick} >2023</Button>
-        <Button name ="year" value="2024" onClick={handleClick} >2024</Button>
+        <Button className = "dd" name ="year" value="2022" onClick={handleClick} >2022</Button>
+        <Button className = "dd" name ="year" value="2023" onClick={handleClick} >2023</Button>
+        <Button className = "dd" name ="year" value="2024" onClick={handleClick} >2024</Button>
         <h3>SELECT A QUARTER</h3>
         <div style={{ display: "flex", justifyContent: "flex-start" }}>
           <Button name="quarter" value="Q1" onClick={handleClick} >Q1</Button>

@@ -8,11 +8,14 @@ import Button from "../Button/Button";
 function NavBar() {
   return (
     <nav>
+      <div className="first">
       <div className='logo'>
         <img src={logo} />
         <span>RockaBuy</span>
       </div>
-      <ul>
+      </div>
+      <div className="second">
+       <ul>
         <NavLink activeClassName='active' to='/home'>Home</NavLink>
         <NavLink activeClassName='active'  to='/build'>Build</NavLink>
         <NavLink activeClassName='active'  to='/about'>About</NavLink>
@@ -20,13 +23,12 @@ function NavBar() {
       <div className='cta'>
         <ul>
         <Link to="/login">
-        <Button className= "inverted">Log In</Button>
-        </Link>
-        <Link to="/signup">
-        <Button>Sign Up</Button>
+        <Button className= "" style={{width: 'fit-content'}}>LeaderBoard</Button>
         </Link>
         </ul>
+      </div> 
       </div>
+      
     </nav>
   );
 }
