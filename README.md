@@ -31,14 +31,15 @@ ation
 
 ### Steps  
 1. Clone the repository:  
-   
+```bash
    git clone https://github.com/yourusername/rockabuy-moon-rocket-launch.git  
    cd rockabuy-moon-rocket-launch
-   
+```
 3. Install modules
-
+```bash
    npm i
-
+```
 4. Run Code
-
+```bash
    npm run dev
+```
